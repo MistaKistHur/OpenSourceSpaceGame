@@ -29,4 +29,14 @@ class Game{
 	}
 }
 
+// ::>> Game Controls.
+
+// ::>> Touch Controls.
+
+// ::>> User Actions.
+
+// ::>> Resources.
+
+// ::>> Scoring.
+
 // ::>> Notes...
