@@ -1,0 +1,23 @@
+/*.::>>Notes:
+
+
+
+*/
+
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	user-select:none;
+	box-sizing:border-box;
+	text-decoration:none;
+  }
+body{
+  display:block !important;
+  width:100vw; height:100vh;
+  background-image:url('');
+  overflow-x:hidden;
+  }
+footer{
+
+}
