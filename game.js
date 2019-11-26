@@ -40,27 +40,35 @@ class Levels{
 }
 class Crafts{
 	constructor(){
-		this.baseHealth = '27500';
-		this.baseShields = '1480';
-		this.multiplier = [];		
-		this.artifacts = [];
-		this.weapons = [];
+		this.baseHealth = '275000' + 25%; 	// Plus should be green on the bar (UseGradient.)
+		this.baseShields = '148000' + 22%;
+		this.multiplier = [];					
+		this.artifacts = [];			// Artifacts have special properties on fleets, research, intel & wellbeing.
+		this.weapons = [];			// create various different weapons classes.
 		this.bonuses = [];
+		this.anims = ["idle","move","turbo","warp",
+			      "escort","guard","rotate","freeze",
+			      "morph","implode","explode","fire",
+			      "special","pickup","damage","unload"];
+		this.assetsPath = '..assets/crafts';
 	}
 	function Morph(){	// ::>> Changes all these to fatArrow syntax when functionality is complete.
 		// Animate Morphology.
 	}
 	function Hibernate(){
 		// Activate shields, partial invisibility to other crafts(based on probability).
+		// Replenish foodz, energyz, shields etc. Crew Mentality += better. research++
 	}
 	function Warp(){
 		// Needs a target destination, warp counter, eta to arrival, reactor strength.
 	}
 	function Guard(){
 		// Activate force field, which absorbs surrounding crafts/bases.
+		// resources -= 5%
 	}
 	function Escort(){
 		// link and increase speed of target ships/fleets.
+		// resources -= 8%
 	
 	}
 
@@ -71,8 +79,8 @@ class Fleets{
 		this.formationDragReduction = SumNumb;
 		this.fleetStrength = null;
 		this.captain = captain;
-		this.mercinaries = [];
-		this.multiplier = [];	
+		this.mercinaries = []; 		// A crew of editable soldiers to marshal & maintain your fleets
+		this.multiplier = [];	        // ^ aswell as being the active commanders during fleet battles.
 		this.bonuses = [];
 	}
 }
@@ -80,17 +88,25 @@ class Drones{		// ::>> Drones & Mechs for vaious different missions, recon, spyi
 	constructor(){
 		this.target = [];  // Up 2 8 targets.
 		this.objective = objective;
+		// ^ Objective will be one of many tasks depending on the drone deployed.
 	}
 }
 class SpaceNodes{	// ::>> These will be bases, planets, docking Station & fuel outlets.
 	constructor(){
-		this.owner;	
-		this.objectAlliance;
-		this.allegance;
+		this.owner;		// ::>> Usr.	
+		this.objectAlliance;	// ::>  OverAll dedication
+		this.allegance;		// ::>
 		this.health;
-		this.mainPurpose;
-		this.secPurpose;
-		this.details = {
+		this.mainPurpose;	// ::>> is Base? Fuel Station? Asteroid? Artifact? Planet? etc
+		this.secPurpose;		// ::>> hidden Agenda only visible to Usr, Crew, Maybe Alliance
+		this.details = {			// ::>> eg. Could be [base + fuelling station], [asteroid + intel station].. only idea atm.
+			resources: null,
+			health: null,
+			shields: null,
+			visibility: 0 || 1,
+			address: '',	// Some vector.
+			defenses: {};
+			
 			// Some metrics in here.
 		};
 		this.stats = [];
