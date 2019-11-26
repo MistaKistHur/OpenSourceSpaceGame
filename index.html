@@ -78,7 +78,10 @@
       </div>  	    
 	    
       <div class="account">
-      
+	      <p>Preferences</p>
+	      <p>Delete Account</p>
+	      <p>Notifications</p>
+	      <p>Alliances</p>
       </div>	    
       <div class="support">
 	      <p>Contact Our Support Group</p>
@@ -86,21 +89,41 @@
 	      <a href=""></a>
 	      <a href=""></a>
       </div>	    
-	    
-	    
-    </section>
+    </section><!-- ::>> Closing Section for the Menu.. -->
+<!-- ::>> Menu Section Above is Normally Hidden. Different menu for first start --> 
   <footer>
     
   </footer> <!-- ::>> Three.js to go in here.. -->
-	    <script></script>
-	    <script src="game.js></script>
-	    <script>
-	      document.addEventListener("DOMContentLoaded",()=>{
-		const game = new Game();
-		window.game = game;		// ::>> For Debugging Only.
-			let ActiveUsrs = [];
-	      });		 
-	    </script>
+<!-- ::>>. Main Scripts Section -------------------------------------------------------------- -->
+<!-- ::>> Notes:.
+     ::>>
+     ::>>
+     ::>>
+-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"
+		integrity="sha256-Wua0LsQkGDEeIkbmBNjj9wcThJh5uCD6R8+5YQhXveQ="
+		crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PhysicsJS/0.7.0/physicsjs-full.min.js"
+		integrity="sha256-aSNzj3vxfHIO7QqUWubkOHRJK3hw9oun4exZJR2DTSk="
+		crossorigin="anonymous">
+        </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PhysicsJS/0.7.0/renderers/canvas.js"
+		integrity="sha256-JOfMv/dDlI9MWRpXFh99bRI6INRI+3xLanDOgvUQx7A="
+		crossorigin="anonymous">
+	</script>
+	<script src="main.js">
+	</script>
+	<script src="game.js>
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded",()=>{
+	      const game = new Game();
+	      window.game = game;			// ::>> For Debugging Only.
+		     let ActiveUsrs = [];
+            });		 
+        </script>
+<!-- ::>>. Main Scripts Section ------------------------------------------------------------- -->							  
   </body>
 </html>
 <!-- ::>> Notes:
@@ -108,7 +131,7 @@
 -->
 <!--
 	Top Contributors:
-	Version Number:
-	Issues:
-	Url:
+	Version Number: v1.0
+	Issues:		?
+	Url:		?.[No Domain Yet.]
 -->
