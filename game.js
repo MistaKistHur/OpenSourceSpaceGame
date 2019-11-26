@@ -33,19 +33,49 @@ class UserAgent{	// ::>> May move these to there own seperate modules[.All of th
 		
 	}
 }
+class UiControls{
+	constructor(){
+		// ::>> Create Screen Controls in here
+		// ::>> Tilt, pan, zoom, center, split-view etc
+
+	}	
+}
 class Levels{
 	constructor(){
-		
-	}	
+		this.levelNo = LevelNo;
+		this.levelMap = LevelMap;
+		this.levelAsset = [];
+		this.levelState = LevelState;
+		this.levelHardness = Hardness;
+		this.levelProgress = Progress; 
+	}
+	function prefetchAssets(){
+		// ::>> Fetch Assets & Dependancies...	
+	}
+	function buildMap(){
+		// ::>> Create Matrices.
+		// ::>> Layout vectors.
+		// ::>> Add Textures & Assets.
+	}
+	function populateMap(){
+		// ::>> Fetch Server info for players
+	}
+	function buildLevel(){
+		// ::>> Combine Everything.
+	}
+	function clearLevel(){
+		// ::>> To do after Completion.
+	}
 }
 class Crafts{
 	constructor(){
-		this.baseHealth = '275000' + 25%; 	// Plus should be green on the bar (UseGradient.)
+		this.baseHealth = '275000' + 25%; 	// ::>> Plus should be green on the bar (UseGradient.)
 		this.baseShields = '148000' + 22%;
 		this.multiplier = [];					
-		this.artifacts = [];			// Artifacts have special properties on fleets, research, intel & wellbeing.
-		this.weapons = [];			// create various different weapons classes.
+		this.artifacts = [];			// ::>> Artifacts have special properties on fleets, research, intel & wellbeing.
+		this.weapons = [];			// ::>> create various different weapons classes.
 		this.bonuses = [];
+		this.speed = null;
 		this.anims = ["idle","move","turbo","warp",
 			      "escort","guard","rotate","freeze",
 			      "morph","implode","explode","fire",
@@ -53,22 +83,25 @@ class Crafts{
 		this.assetsPath = '..assets/crafts';
 	}
 	function Morph(){	// ::>> Changes all these to fatArrow syntax when functionality is complete.
-		// Animate Morphology.
+		// ::>> Animate Morphology.
 	}
 	function Hibernate(){
-		// Activate shields, partial invisibility to other crafts(based on probability).
-		// Replenish foodz, energyz, shields etc. Crew Mentality += better. research++
+		// ::>> Activate shields, partial invisibility to other crafts(based on probability).
+		// ::>> Replenish foodz, energyz, shields etc. Crew Mentality += better. research++
+	}
+	function SpawnShield(){
+	
 	}
 	function Warp(){
-		// Needs a target destination, warp counter, eta to arrival, reactor strength.
+		// ::>> Needs a target destination, warp counter, eta to arrival, reactor strength.
 	}
 	function Guard(){
-		// Activate force field, which absorbs surrounding crafts/bases.
-		// resources -= 5%
+		// ::>> Activate force field, which absorbs surrounding crafts/bases.
+		// ::>> resources -= 5%
 	}
 	function Escort(){
-		// link and increase speed of target ships/fleets.
-		// resources -= 8%
+		// ::>> link and increase speed of target ships/fleets. speed[+=%33.]
+		// ::>> resources -= 8%
 	
 	}
 
@@ -79,8 +112,8 @@ class Fleets{
 		this.formationDragReduction = SumNumb;
 		this.fleetStrength = null;
 		this.captain = captain;
-		this.mercinaries = []; 		// A crew of editable soldiers to marshal & maintain your fleets
-		this.multiplier = [];	        // ^ aswell as being the active commanders during fleet battles.
+		this.mercinaries = []; 		// ::>> A crew of editable soldiers to marshal & maintain your fleets
+		this.multiplier = [];	        // ::>> ^ aswell as being the active commanders during fleet battles.
 		this.bonuses = [];
 	}
 }
@@ -88,7 +121,7 @@ class Drones{		// ::>> Drones & Mechs for vaious different missions, recon, spyi
 	constructor(){
 		this.target = [];  // Up 2 8 targets.
 		this.objective = objective;
-		// ^ Objective will be one of many tasks depending on the drone deployed.
+		// ::>> ^ Objective will be one of many tasks depending on the drone deployed.
 	}
 }
 class SpaceNodes{	// ::>> These will be bases, planets, docking Station & fuel outlets.
@@ -104,10 +137,10 @@ class SpaceNodes{	// ::>> These will be bases, planets, docking Station & fuel o
 			health: null,
 			shields: null,
 			visibility: 0 || 1,
-			address: '',	// Some vector.
+			address: '',	// ::>> Some vector.
 			defenses: {};
 			
-			// Some metrics in here.
+			// ::>> Some metrics in here.
 		};
 		this.stats = [];
 	}
