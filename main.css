@@ -1,23 +1,49 @@
-/*.::>>Notes:
+/*.::>>.Notes:
 
 
 
 */
 
 *{
-	margin:0;
-	padding:0;
-	list-style:none;
-	user-select:none;
-	box-sizing:border-box;
-	text-decoration:none;
+  margin:0;
+  padding:0;
+  list-style:none;
+  user-select:none;
+  box-sizing:border-box;
+  text-decoration:none;
   }
 body{
   display:block !important;
   width:100vw; height:100vh;
   background-image:url('');
   overflow-x:hidden;
+  z-index:500;
   }
+canvas{
+  min-width:100vw;
+  min-height:100vw;
+  margin:8px;
+  z-index:501;
+}
 footer{
 
 }
+
+/*
+::>> Notes:
+
+
+::>> Errors:
+
+
+::>> To Do:
+
+
+::>> Contributers:
+
+
+::>> Kik:
+::>> Contact:
+
+
+*/
