@@ -28,6 +28,32 @@ class Game{
 		this.renderer.render(this.scene, this.camera);
 	}
 }
+class UserAgent{
+
+}
+class Levels{
+
+}
+class Crafts{
+	constructor(){
+		this.baseHealth = '27500';
+		this.baseShields = '1480';
+		this.multiplier = [];		
+		this.artifacts = [];
+		this.weapons = [];
+		this.bonuses = [];
+	}
+
+}
+class Fleets{
+
+}
+class Drones{		// ::>> Drones & Mechs for vaious different missions, recon, spying, sabotage...
+
+}
+class SpaceNodes{	// ::>> These will be bases, planets, docking Station & fuel outlets.
+
+}
 
 // ::>> Game Controls.
 
