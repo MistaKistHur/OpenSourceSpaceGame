@@ -26,14 +26,21 @@
 </head>
   <body style="display:none;">
     <section id=""><!-- Main Section -->
-      <svg id="Svg1"></svg>
-      <canvas id="CanV"></canvas>
+		<svg id="Svg1" xmlns="http://www.w3.org/2000/svg">
+		  <g>
+		    <rect x="0" y="0" width="100" height="100" fill="black"></rect>
+		    <text x="18" y="28" font-family="Verdana" font-size="35" fill="blue">Ethereal Crafts</text>
+		  </g>
+		</svg>
+
+
+      <canvas id="CanV" token="" value="" csrf=""></canvas>
+
     <section><!-- Closing Tag for main Section -->
-	    
-<!-- ::>> Menu Section Below is Normally Hidden. Different menu for first start -->	    
+<!-- ::>> Menu Section Below is Normally Hidden. Different menu for first start -->
     <section id="menu" style="display:none;" value="inactive">
       <div class="user-based">
-      
+
       </div>
       <div class="fleet-options">
 	      <p>Fleet Bay</p>
@@ -44,12 +51,12 @@
       <div class="base-options">
 	      <p>Enter Protection Mode</p>
 	      <p>Put All resources into Defense</p> <!-- By all this means a maximum percentage or is main focus -->
-	      <p>Put All resources into Research</p><!-- Others will continue at a reduced capacity -->      
-	      <p>Put All resources into Repairs</p>      
-	      <p>Put All Resources into Mining</p>      
-	      <p>Put All Resources into Intel</p> 
+	      <p>Put All resources into Research</p><!-- Others will continue at a reduced capacity -->
+	      <p>Put All resources into Repairs</p>
+	      <p>Put All Resources into Mining</p>
+	      <p>Put All Resources into Intel</p>
 	      <p>Put All Resources into Recon</p>
-	      
+
       </div>
       <div class="mining-options">
 	      <p>Mining Units Deployed</p>
@@ -68,31 +75,31 @@
 	<p>Automate Mining Operations</p>	<!-- ::>> Automation is at a reduced efficiency of 85% -->
 	<p>Automate Artifact Research</p>
 	<button>Turn All Automation Tasks Off.</button>
-      </div> 	
+      </div>
       <div class="themes">
 	      <p>Light Theme</p>
 	      <p>Dark Theme</p>
 	      <p>Minimal theme</p>
 	      <p>Psy Theme</p>
 	      <p>High Contrast Theme</p>
-      </div>  	    
-	    
+      </div>
+
       <div class="account">
 	      <p>Preferences</p>
 	      <p>Delete Account</p>
 	      <p>Notifications</p>
 	      <p>Alliances</p>
-      </div>	    
+      </div>
       <div class="support">
 	      <p>Contact Our Support Group</p>
 	      <a href=""></a>
 	      <a href=""></a>
 	      <a href=""></a>
-      </div>	    
+      </div>
     </section><!-- ::>> Closing Section for the Menu.. -->
 <!-- ::>> Menu Section Above is Normally Hidden. Different menu for first start --> 
   <footer>
-    
+
   </footer> <!-- ::>> Three.js to go in here.. -->
 <!-- ::>>. Main Scripts Section -------------------------------------------------------------- -->
 <!-- ::>> Notes:.
@@ -114,16 +121,16 @@
 	</script>
 	<script src="main.js">
 	</script>
-	<script src="game.js>
-        </script>
+	<script src="game.js">
+    </script>
         <script>
             document.addEventListener("DOMContentLoaded",()=>{
 	      const game = new Game();
-	      window.game = game;			// ::>> For Debugging Only.
+	      window.game = game;			// ::>> For Debugging Only. Allows to view in console.
 		     let ActiveUsrs = [];
-            });		 
+            });
         </script>
-<!-- ::>>. Main Scripts Section ------------------------------------------------------------- -->							  
+<!-- ::>>. Main Scripts Section ------------------------------------------------------------- -->
   </body>
 </html>
 <!-- ::>> Notes:
