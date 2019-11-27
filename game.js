@@ -139,6 +139,14 @@ class Levels{
 		// ::>> To do after Completion.
 	}
 }
+// ::>>. Faction list: Venutians, Pliedians, Reepers, Siarians, Lerchers, Butanites, Corealians, Neptunians, 
+// ::>>. Sectors.>
+// ::>>. StarSystems.>
+// ::>>. Tech-tiers.>
+// ::>>. Artifacts.>
+// ::>>. Build a research Tree.>
+// ::>>. Hidden Levels/missions.> Psychadelic World, Fractal Sector, Weird Physics, Market Mission.
+
 class Crafts{
 	constructor(){
 		this.baseHealth = '275000' + 25%; 	// ::>> Plus should be green on the bar (UseGradient.)
@@ -181,19 +189,26 @@ class Crafts{
 class Fleets{
 	constructor(){
 		this.formation = formation;
-		this.formationDragReduction = SumNumb;
-		this.fleetStrength = null;
+		this.formationDragReduction = SumNumb; 		// increased speed bonus.
+		this.fleetStrength = null;      // bonus for stacking certain types. 
 		this.captain = captain;
 		this.mercinaries = []; 		// ::>> A crew of editable soldiers to marshal & maintain your fleets
-		this.multiplier = [];	    // ::>> ^ aswell as being the active commanders during fleet battles.
+		this.multiplier = [];	        // ::>> ^ aswell as being the active commanders during fleet battles.
 		this.bonuses = [];
 	}
+	// mercinaries.push();
+	// mercinaries.pop();
+	// how would u re-arrange them & give them different duties.
+	
+	// multipler values. => 4, 8, 16, 32, 64.
 }
 class Drones{					// ::>> Drones & Mechs for vaious different missions, recon, spying, sabotage...
 	constructor(){
-		this.target = [];  		// Up 2 8 targets.
+		this.target = [];  		// Up 2 8 targets. 
 		this.objective = objective;
+		this.special = special;
 		// ::>> ^ Objective will be one of many tasks depending on the drone deployed.
+		// Spider Mech Drones, Squid Canons, Octopussy miners, Alien Mech, Nano bot Swarm, Shapeshifters[intel], 
 	}
 }
 class SpaceNodes{				// ::>> These will be bases, planets, docking Station & fuel outlets.
