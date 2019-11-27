@@ -2,6 +2,7 @@
 // ::>>.
 class Game{
 	constructor(){
+
 		this.scene = new THREE.Scene();
 		this.camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight,  0.1, 1000);
 		this.renderer = new THREE.WebGlRenderer();
@@ -20,6 +21,26 @@ class Game{
 			this.scene.add(ambient);
 
 			this.camera.position.z = 3;
+	        // Load the background texture ::>> Spliced this code block in from ThisIsSparta's answer - https://stackoverflow.com/questions/19865537/three-js-set-background-image
+		// How to add BG img/texture to a scene .animate(Opacities)& build nebulaes, particles, debri ontop....
+		        var texture1 = THREE.ImageUtils.loadTexture( 'spaceBg1.png' );	//Change to WepP if possible.
+		        var texture2 = THREE.ImageUtils.loadTexture( 'spaceBg2.png' );
+		        var texture3 = THREE.ImageUtils.loadTexture( 'spaceBg3.png' );
+		        var backgroundMesh = new THREE.Mesh(
+		            new THREE.PlaneGeometry(2, 2, 0),
+		            new THREE.MeshBasicMaterial({
+		                map: texture
+		            }));
+
+		        backgroundMesh .material.depthTest = false;
+		        backgroundMesh .material.depthWrite = false;
+
+		        // Create your background scene
+			        var backgroundScene = new THREE.Scene();
+			        var backgroundCamera = new THREE.Camera();
+			        backgroundScene .add(backgroundCamera);
+			        backgroundScene .add(backgroundMesh);
+			        // ::>> End Splice[Code Block]
 			this.animate();
 	}
 	animate() {
@@ -163,8 +184,8 @@ class Fleets{
 		this.formationDragReduction = SumNumb;
 		this.fleetStrength = null;
 		this.captain = captain;
-		this.mercinaries = []; 		// ::>> A crew of editable soldiers[28] to marshal & maintain your fleets.[880 lesser soldiers/aliens]
-		this.multiplier = [];	        // ::>> ^ aswell as being the active commanders during fleet battles.
+		this.mercinaries = []; 		// ::>> A crew of editable soldiers to marshal & maintain your fleets
+		this.multiplier = [];	    // ::>> ^ aswell as being the active commanders during fleet battles.
 		this.bonuses = [];
 	}
 }
@@ -203,64 +224,41 @@ class Weapons{
 /* Not sure if react would be better.... */
 
 class Base extends SpaceNodes{
-	constructor(usr,add,active,state,plasma,magneto){
-	
-	}
+
 }
+
 class Mine extends SpaceNodes{
-	constructor(){
-	
-	}
-}
-class World extends SpaceNodes{
-	constructor(){
-	
-	}
-}
-class WarpNode extends SpaceNodes{
-	constructor(){
-	
-	}
-}
-class JunkYard extends SpaceNodes{
-	constructor(){
-	
-	}
-}
-class RebelHQ extends SpaceNodes{
-	constructor(){
-	
-	}
-}
-class SpaceJunk extends SpaceNodes{
-	constructor(){
-	
-	}
+
 }
 class TradeCenter extends SpaceNodes{
-	constructor(){
-	
-	}
+
 }
 class AlienOutpost extends SpaceNodes{
-	constructor(){
-	
-	}
+
 }
-class RebelOutPost extends SpaceNodes{
-	constructor(){
-	
-	}
+class World extends SpaceNodes{
+
+}
+class WarpNode extends SpaceNodes{
+
+}
+class SpaceJunk extends SpaceNodes{
+
+}
+class JunkYard extends SpaceNodes{
+
+}
+class RebelHQ extends SpaceNodes{
+
+}
+class Rebel extends SpaceNodes{
+
 }
 class IntelStation extends SpaceNodes{
-	constructor(){
-	
-	}
+
 }
 class AlienBizarre extends SpaceNodes{
-	constructor(){
-	
-	}
+
 }
 // ::>> Game Controls.
 
