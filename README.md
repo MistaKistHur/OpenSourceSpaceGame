@@ -6,7 +6,7 @@ if anyone chooses to help work on this project, please document what your change
 all comments whether it be in htlm, js, css or any other file must be prepended by ::>>. This is to help with the learning & so others can see what has been done.
 
 Will set up a Kik messenger group/skype & deviant art group in the near future for all contributors to be able to communicate,
-& bounce ideas of one another.
+& bounce ideas of one another. Aswell as using deviant art for a resources repository for Vectors, Model, Graphics & Story-boards.
 
 Will create some guidelines and to-do lists shortly.
 
