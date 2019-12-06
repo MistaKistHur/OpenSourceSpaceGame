@@ -292,3 +292,25 @@ class AlienBizarre extends SpaceNodes{
 // Add orbital controls.
 // Add skins
 //
+
+// Events to be moved to a seperate file
+/*
+	D forcefield  = key 68
+	S Move Left   = key 83
+	F Move Right  = Key 70
+	E Roll left   = key 69
+	R Roll Right  = key 82 
+	Z Weapons     = key 90
+	X Weapons     = key 88 
+	
+	::>> Touch Actions
+	::>> Control Pad ie ps/xbox etc...
+	::>> Mouse Actions.
+		- scroll
+		- left 
+		- right
+		- middle
+
+*/
+
+
