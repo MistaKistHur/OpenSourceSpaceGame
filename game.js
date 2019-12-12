@@ -268,6 +268,9 @@ class Weapon{
 }
 /* BluePrints for the various Different Nodes to go in here, maybe split and import. */
 /* Not sure if react would be better.... */
+class World extends SpaceNodes{
+
+}
 
 class Base extends SpaceNodes{
 
@@ -282,9 +285,7 @@ class TradeCenter extends SpaceNodes{
 class AlienOutpost extends SpaceNodes{
 
 }
-class World extends SpaceNodes{
 
-}
 class WarpNode extends SpaceNodes{
 
 }
@@ -301,11 +302,44 @@ class Rebel extends SpaceNodes{
 
 }
 class IntelStation extends SpaceNodes{
-
+	
 }
 class AlienBizarre extends SpaceNodes{
-
+	constructor(){
+		this.sector = sector;
+		this.mrktId = marktGuid;
+		this.pos = []; 				// ::>> Some vector co-ordinates. maybe json file.
+		this.open = undefined;
+		this.currency = mrkt_cur;
+		this.marshalls = mrkt_faction_ownr;	// ::>> Different markets will be governed by various factions
+		this.tax_rt = tax_rate;
+		this.times = times; 			// ::>> opening hours of the markets.
+		this.docking_fee = 50; 			// ::>> base fee to enter or trade at market.
+		
+	}
+	function check_credent(){
+							// ::>> check if usr allowed or has any current bans.
+							// ::>> can access stelth by drone but only purchase.
+							// ::>> may loose drone.
+	}
+	function populate(){
+	
+	}
+	function expel(){
+	
+	}
+	function mutany(){
+	
+	}
 }
+
+	function Auto_save(){
+		// new request every 8 minutes.
+		// 
+	}
+	function UsrSav(){
+		// Ui btn.
+	}
 // ::>> Game Controls.
 
 // ::>> Touch Controls.
