@@ -232,8 +232,39 @@ class SpaceNodes{				// ::>> These will be bases, planets, docking Station & fue
 		this.stats = [];
 	}
 }
-class Weapons{
-
+class Weapon{
+	constructor(){
+	this.name = name;
+	this.w_class = w_class;
+	this.rounds = rounds; 		// ::>> 1 round = 28 pulses, bullets or projectiles.
+	this.damage = undefined;	// ::>> make weapons modular & upgradable the same as all other assets.
+	this.mag = undefined;
+	this.damage_bonus = undefined;
+	this.multiplier = null;
+	this.parts = 7;
+	this.cost = undefined;
+	this.ammoCst = undefined;
+	this.heatSign = '';		// ::>> increased heat signiture means enemy targeting is incrementally better.
+	}
+	function trackNtrace(){
+		if(){			// ::>> logic to track nearest target, sttrongest/weakest or optimal...
+		} else{
+		   }
+		switch(){
+		
+		}			// ::>> Ui needs btn to give user control or hand-over control to Ai.
+	}
+	function prime(){
+	
+	}	
+	function blitz(){
+	
+	}	
+	function hellfire(){
+	
+	}	
+	
+	
 }
 /* BluePrints for the various Different Nodes to go in here, maybe split and import. */
 /* Not sure if react would be better.... */
