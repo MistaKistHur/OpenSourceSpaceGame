@@ -1,18 +1,6 @@
 // ::>>.Notes.......
 // ::>>.
 
-/* !!Example code only.
-	// TICKER
-   var symbol = 'GOOG'; // default symbol to watch
-   var ticker = new Worker('ticker.js');
-
-   	// SEARCHER
-   var searcher = new Worker('searcher.js');
-   function search(query) {
-     searcher.postMessage(query);
-   }
-   
-  */
 	/* Using MVC split the work up into the following workers */
 	/* https://stackoverflow.com/questions/13574158/number-of-web-workers-limit */
 	/* Each browser has web workers limitations (Firefox has 20, Chrome 60+, Opera 16) => 8-9 seems optimal.. */
@@ -26,16 +14,53 @@ const assetMngr = new Worker('/Scripts/AsstMngr.js');		// [V.3] ...View.
 const sceneMngr = new Worker('/Scripts/SceneMngr.js');		// [V.4]
 const renderMngr = new Worker('/Scripts/RndMngr.js');		// [V.5]
 
-const controller = new Worker('/Scripts/Cont.js');		// [C.6] ...Controller.
+const controller = new Worker('/Scripts/Cont.js');		// [C.6] ...Controller(inc. all counters.).
 const JobStack = new Worker('/Scripts/JobLine.js');		// [C.7]
 const ErrHndlr = new Worker('/Scripts/ErrMng.js');		// [C.8]
-const router = new Worker('/Scripts/Router.js');		// [C.9]
+const router = new Worker('/Scripts/Router.js');		// [C.9]	.. All workers to check in with router via sockets.
 
 if(SomeJobNotFitAboveTaskHndlrs){
-   // do something Here
+   // do something Here ::>> Spawn parse to python maybe.... 
 } else{
 
 }
+	switch(ioStatus){
+		case: idle;
+		case: run;
+		case: err;
+		default:
+	}
+	switch(dbStatus){
+
+	}
+	switch(conecStatus){
+
+	}
+	switch(pageStatus){
+
+	}
+	switch(assetStatus){
+
+	}
+	switch(loadStatus){
+
+	}
+
+
+
+/* !!Example code only.
+	// TICKER
+   var symbol = 'GOOG'; // default symbol to watch
+   var ticker = new Worker('ticker.js');
+
+   	// SEARCHER
+   var searcher = new Worker('searcher.js');
+   function search(query) {
+     searcher.postMessage(query);
+   }
+   
+  */
+
 
 class Game{
 	constructor(){
