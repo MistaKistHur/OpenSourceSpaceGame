@@ -24,6 +24,37 @@ if(SomeJobNotFitAboveTaskHndlrs){
 } else{
 
 }
+// ::>. Notes:
+/* ::>> Babylon refactor code block. */
+/* ::>. Notes: replacing three.js below....................................
+   ::>. Notes:
+
+*/
+	window.addEventListener("DOMContentLoaded",()=>{
+		let Canv = document.getElementById("Canv");
+		let engi = new BABYLON.Engine(Canv, true);
+
+		let createScene = ()=>{
+			var scene = new BABYLON.Scene(engi);
+			var camera = new BABYLON.FreeCamera("camera1",
+			    new BABYLON.Vector3(0,0,-10),scene);
+			camera.setTarget(BABYLON.Vector3.Zero());
+			return scene; // ::>> if inline, which this is > this return statement can be dropped i think.
+		}
+	let scene = createScene();
+	    engi.runRenderLoop(function(){
+	    	scene.render();
+	    });
+		
+	}	// ::>> Closing Tag for the main window evt.
+/* ::>> Babylon refactor code block. */	
+/* ::>. Notes:	Remove three.js code below after learn more babylon.
+   ::>. Notes:			   ........................................
+
+*/
+			
+			
+			
 	switch(ioStatus){
 		case: idle;
 		case: run;
