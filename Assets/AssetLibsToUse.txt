@@ -1,3 +1,4 @@
+::>>. -----------------------------------------------------------
 The following is a list of useful asset library's & repository's
 that can be used for design-ideas, textures, models, height-maps,
                      backgrounds, backdrops, logos, props & more.
