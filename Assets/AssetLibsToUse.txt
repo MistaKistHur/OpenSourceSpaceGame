@@ -19,6 +19,10 @@ that can be used for design-ideas, textures, models, height-maps,
 
     Commons.wikimedia.org/wiki/Category:Images
     Burst.shopify.com/free-images
+    
+    DA Groups for Game Assets:
+        https://www.deviantart.com/game-art
+        https://www.deviantart.com/blender3d
 
 Wish to create the majority of the assets myself or ourselves,
   But these are useful for reference and Ideas.
