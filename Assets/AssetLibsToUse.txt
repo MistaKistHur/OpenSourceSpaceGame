@@ -1,28 +1,38 @@
 The following is a list of useful asset library's & repository's
 that can be used for design-ideas, textures, models, height-maps,
                      backgrounds, backdrops, logos, props & more.
+::>>. -----------------------------------------------------------
 
-    Clara.io
-    Pixabay.com
-    Pexels.com
-    DeviantArt.com
-    Fontawesome.com
-    Turbosquid.com
-    Free3d.com
-    Sketchfab.com
-    Blendernation.com
-    Publicdomainpictures.net
-    Shutterstock.com
-    Blendswap.com
-    Unsplash.com
-    Free-images.com
+    >> Clara.io <<
+    >> Pixabay.com <<
+    >> Pexels.com <<
+    >> DeviantArt.com <<
+    >> Fontawesome.com <<
+    >> Turbosquid.com <<
+    >> Free3d.com <<
+    >> Sketchfab.com <<
+    >> Blendernation.com <<
+    >> Publicdomainpictures.net <<
+    >> Shutterstock.com <<
+    >> Blendswap.com <<
+    >> Unsplash.com <<
+    >> Free-images.com <<
 
-    Commons.wikimedia.org/wiki/Category:Images
-    Burst.shopify.com/free-images
+    >> Commons.wikimedia.org/wiki/Category:Images <<
+    >> Burst.shopify.com/free-images <<
     
+::>>. -----------------------------------------------------------
+
     DA Groups for Game Assets:
-        https://www.deviantart.com/game-art
-        https://www.deviantart.com/blender3d
+        >> https://www.deviantart.com/game-art <<
+        >> https://www.deviantart.com/blender3d <<
+        
+    I have created a gallery folder of game asset ideas,
+    to help create the crafts, weapons & bases
+    It can be viewed here:
+        >> https://www.deviantart.com/squidcannonarmed/favourites/81511257/game-asset-ideas <<
+
+::>>. -----------------------------------------------------------
 
 Wish to create the majority of the assets myself or ourselves,
   But these are useful for reference and Ideas.
@@ -33,6 +43,8 @@ Wish to create the majority of the assets myself or ourselves,
   To view the assets we have already to work with,
   please view the image folders, inside of the Assets Folder.
 
+::>>. -----------------------------------------------------------
+
 Our DeviantArt Group is here:
 DeviantArt Assets folder:
 Skype here:
@@ -40,4 +52,8 @@ Kik group:
 
 If any of the links are broken or do not work anymore,
 please leave a comment here:
+
+::>>. -----------------------------------------------------------
+
+::>>.Further Notes:
 
